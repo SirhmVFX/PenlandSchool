@@ -1,0 +1,132 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+/* DOCUMENT RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+button, textarea, input {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* VARIABLES */
+
+:root {
+    --primary-color-500: #142560;
+    --primary-color-400: #4F5C88;
+    --primary-color-300: #8A92B0;
+    --primary-color-200: #C4C8D7;
+
+    --white: #fff;
+
+    --secondary-color-500: #3763EF;
+    --secondary-color-400: #698AF3;
+    --secondary-color-300: #9BB1F8;
+    --secondary-color-200: #CDD8FB;
+
+    --grey-500: #000000; 
+    --grey-500: #404040; 
+    --grey-500: #808080; 
+    --grey-500: #BFBFBF; 
+    --grey-500: #E6E6E6; 
+
+    --ff: 'Sawarabi Gothic', sans-serif;
+    --h1: clamp(48px, 3vw, 38px)
+    --h2: clamp(40px, 3vw, 38px)
+    --h3: clamp(32px, 3vw, 38px)
+    --h4: clamp(24px, 3vw, 38px)
+    --h5: clamp(20px, 3vw, 38px)
+    --h6: clamp(16px, 3vw, 38px)
+
+    --body-l: clamp(16px, 3vw, 38px);
+    --body-m: clamp(14px, 3vw, 38px);
+    --body-s: clamp(10px, 3vw, 38px);
+
+}
+
+
+/* UTILITY CLASSES */
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+}
+h5 {
+    font-size: var(--h5);
+}
+h6 {
+    font-size: var(--h6);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color1 {
+    color: var(--primary-color-500);
+}
+
+
+.color2 {
+    color: var(--secondary-color-500);
+}
+
+
+
+/* GENERAL STYLES */
+
+nav {
+    width: min(1400px, 80%);
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.navmenu  {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.navmenu li {
+    list-style: none;
+    padding: .5rem;
+}
+
+.navmenu li:hover {
+    border-bottom: 3px solid var(--primary-color-500);
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color-500);
+    margin-bottom: 3px;
+    border-radius: 50px;
+}
+
+.herosection {
+    padding: 2rem;
+}
