@@ -44,8 +44,8 @@ html {
     --grey-500: #E6E6E6; 
 
     --ff: 'Sawarabi Gothic', sans-serif;
-    --h1: clamp(48px, 6vw, 38px);
-    --h2: clamp(40px, 3vw, 40px);
+    --h1: clamp(30px, 3vw, 48px);
+    --h2: clamp(26px, 3vw, 40px);
     --h3: clamp(32px, 3vw, 22px)
     --h4: clamp(24px, 3vw, 14px);
     --h5: clamp(20px, 3vw, 10px);
@@ -132,6 +132,8 @@ nav {
 
 .herosection {
     display: flex;
+    width: min(1400px, 100%);
+    margin-inline: auto;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -151,14 +153,14 @@ nav {
 .hero1 {
     width: 60px;
     position: absolute;
-    top: 120px;
+    top: 220px;
     left: 30px;
 }
 
 .hero2 {
     width: 20px;
     position: absolute;
-    top: 150px;
+    top: 250px;
     right: 40px;
 }
 
@@ -169,6 +171,8 @@ nav {
     width: 100px;
     background-color: var(--white);
     border-radius: 20px;
+
+    display: none;
 }
 
 .txt1 {
@@ -182,8 +186,12 @@ nav {
 .hero3 {
     width: 50px;
     position: absolute;
-    top: 250px;
-    left: 60px;
+    top: 300px;
+    left: 40px;
+}
+
+.stdd {
+    display: flex;
 }
 
 
@@ -200,24 +208,26 @@ nav {
     .hero1 {
         width: 100px;
         position: absolute;
-        top: 100px;
-        left: 30px;
+        top: 200px;
+        left: 60px;
     }
     
     .hero2 {
         width: 30px;
         position: absolute;
-        top: 150px;
-        right: 70px;
+        top: 250px;
+        right: 120px;
     }
     
     .gd-card {
         position: absolute;
         bottom: 0;
-        right: 150px;
-        width: 203px;
+        right: 100px;
+        width: 100px;
         background-color: var(--white);
         border-radius: 20px;
+    
+        display: block;
     }
     
     .txt2 {
@@ -225,14 +235,15 @@ nav {
     }
     
     .hero3 {
-        width: 50px;
+        width: 100px;
         position: absolute;
-        top: 250px;
-        left: 60px;
+        top: 550px;
+        left: 80px;
     }
     
     
     .gdp {
         width: 30px;
+        display: block;
     }
 }
