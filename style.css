@@ -45,15 +45,15 @@ html {
 
     --ff: 'Sawarabi Gothic', sans-serif;
     --h1: clamp(48px, 3vw, 38px)
-    --h2: clamp(40px, 3vw, 38px)
-    --h3: clamp(32px, 3vw, 38px)
-    --h4: clamp(24px, 3vw, 38px)
-    --h5: clamp(20px, 3vw, 38px)
-    --h6: clamp(16px, 3vw, 38px)
+    --h2: clamp(40px, 3vw, 40px)
+    --h3: clamp(32px, 3vw, 22px)
+    --h4: clamp(24px, 3vw, 14px)
+    --h5: clamp(20px, 3vw, 10px)
+    --h6: clamp(16px, 3vw, 12px)
 
-    --body-l: clamp(16px, 3vw, 38px);
-    --body-m: clamp(14px, 3vw, 38px);
-    --body-s: clamp(10px, 3vw, 38px);
+    --body-l: clamp(16px, 3vw, 10px);
+    --body-m: clamp(14px, 3vw, 8px);
+    --body-s: clamp(10px, 3vw, 6px);
 
 }
 
@@ -83,6 +83,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .color1 {
@@ -128,5 +129,16 @@ nav {
 }
 
 .herosection {
+    display: flex;
+    justify-content: center;
     padding: 2rem;
+    
+}
+
+
+
+@media (min-width: 60rem) {
+    .container {
+
+    }
 }
