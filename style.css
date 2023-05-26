@@ -103,6 +103,8 @@ nav {
     width: min(1400px, 80%);
     margin-inline: auto;
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navmenu  {
@@ -131,8 +133,23 @@ nav {
 .herosection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 2rem;
+    text-align: center;
     
+}
+
+
+.herosection img {
+    width: 80%;
+}
+
+
+.hero1 {
+    width: 10%;
+    height: auto;
 }
 
 
