@@ -311,7 +311,18 @@ nav {
     gap: 3rem;
 }
 
-@media (min-width: 80rem) {
+.faq {
+    display: grid;
+
+    gap: 3rem;
+} 
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 80rem) { 
   .container {
     grid-auto-flow: column;
     justify-content: center;
@@ -374,5 +385,9 @@ nav {
 
   .achievements {
     flex-direction: row;
+  }
+  .faq {
+        grid-auto-flow: column;
+            grid-auto-columns: 1fr 3fr;
   }
 }
