@@ -114,12 +114,25 @@ nav {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .navmenu {
   display: flex;
   justify-content: space-between;
-  display: none;
+  display: block;
+  position: absolute;
+  padding: 2rem;
+  text-align: right;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  z-index: 99;
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  transition: .4s;
 }
 
 .navmenu li {
@@ -127,9 +140,31 @@ nav {
   padding: 0.5rem;
 }
 
-.navmenu li:hover {
-  border-bottom: 3px solid var(--primary-color-500);
+.hamburger {
+    cursor: pointer;
+    transition: .4s;
 }
+
+.navmenu.is-active {
+    height: 250px;
+    opacity: 1;
+    transition: .4s;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+    transform: translateX(20px);
+    transition: .4s;
+}
+
+.hamburger.is-active .line:nth-child(2) {
+    display: none;
+    transition: .4s;
+}
+
+.hamburger.is-active div:nth-child(3) {}
+
+
+
 
 .line {
   width: 30px;
@@ -411,6 +446,19 @@ footer {
     grid-auto-flow: column;
     justify-content: center;
     padding: 6rem;
+  }
+
+  .navmenu {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .navmenu li:hover {
+      border-bottom: 3px solid var(--secondary-color-500);
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .hero1 {
