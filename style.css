@@ -38,16 +38,16 @@ html {
     --secondary-color-200: #CDD8FB;
 
     --grey-500: #000000; 
-    --grey-500: #404040; 
-    --grey-500: #808080; 
-    --grey-500: #BFBFBF; 
-    --grey-500: #E6E6E6; 
+    --grey-400: #404040; 
+    --grey-300: #808080; 
+    --grey-200: #BFBFBF; 
+    --grey-100: #E6E6E6; 
 
     --ff: 'Sawarabi Gothic', sans-serif;
 
     --h1: clamp(30px, 4vw, 58px);
     --h2: clamp(32px, 4vw, 40px);
-    --h3: clamp(22px, 3vw, 32px)
+    --h3: clamp(22px, 4vw, 38px);
     --h4: clamp(14px, 3vw, 24px);
     --h5: clamp(10px, 3vw, 20px);
     --h6: clamp(12px, 3vw, 20px);
@@ -81,14 +81,14 @@ h6 {
 }
 
 .container {
-    width: min(1400px, 70%);
+    width: min(1400px, 80%);
     display: grid;
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 1rem;
+    padding: 4rem;
     gap: 3rem;
     margin-inline: auto;
 }
@@ -234,6 +234,34 @@ nav {
     
 } 
 
+.whh-pen {
+    width: 50px;
+}
+
+.whh-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 264px;
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px var(--grey-100);
+    border-radius: 10px;
+}
+
+.whh-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.why-pen {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
 
 
@@ -290,5 +318,7 @@ nav {
         display: block;
     }
 
-
+    .whh-card {
+        justify-content: flex-start;
+    }
 }
