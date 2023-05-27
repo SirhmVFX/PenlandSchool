@@ -44,16 +44,17 @@ html {
     --grey-500: #E6E6E6; 
 
     --ff: 'Sawarabi Gothic', sans-serif;
-    --h1: clamp(30px, 3vw, 48px);
-    --h2: clamp(26px, 3vw, 40px);
-    --h3: clamp(32px, 3vw, 22px)
-    --h4: clamp(24px, 3vw, 14px);
-    --h5: clamp(20px, 3vw, 10px);
-    --h6: clamp(16px, 3vw, 12px);
 
-    --body-l: clamp(16px, 3vw, 10px);
-    --body-m: clamp(14px, 3vw, 8px);
-    --body-s: clamp(10px, 3vw, 6px);
+    --h1: clamp(30px, 4vw, 58px);
+    --h2: clamp(32px, 4vw, 40px);
+    --h3: clamp(22px, 3vw, 32px)
+    --h4: clamp(14px, 3vw, 24px);
+    --h5: clamp(10px, 3vw, 20px);
+    --h6: clamp(12px, 3vw, 20px);
+
+    --body-l: clamp(10px, 3vw, 16px);
+    --body-m: clamp(8px, 3vw, 14px);
+    --body-s: clamp(6px, 3vw, 10px);
 
 }
 
@@ -80,10 +81,16 @@ h6 {
 }
 
 .container {
-    display: flex;
+    width: min(1400px, 70%);
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+    margin-inline: auto;
 }
 
 .color1 {
@@ -137,8 +144,8 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 3rem;
     text-align: center;
     position: relative;
     
@@ -199,11 +206,46 @@ nav {
     width: 30px;
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-@media (min-width: 60rem) {
+.about-ico {
+    width: 30px;
+}
+.about-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.about-side1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.about-side2 {
+    width: 550px;
+    
+} 
+
+
+
+
+
+@media (min-width: 80rem) {
     .container {
-
+        grid-auto-flow: column;
+        justify-content: center;
+        
     }
+
+
 
     .hero1 {
         width: 100px;
@@ -221,12 +263,13 @@ nav {
     
     .gd-card {
         position: absolute;
-        bottom: 0;
-        right: 100px;
-        width: 100px;
+        bottom: -10px;
+        right: 320px;
+        width: 200px;
         background-color: var(--white);
         border-radius: 20px;
-    
+        padding: 1rem;
+        box-shadow: 0px 0px 20px rgb(182, 182, 182);
         display: block;
     }
     
@@ -246,4 +289,6 @@ nav {
         width: 30px;
         display: block;
     }
+
+
 }
