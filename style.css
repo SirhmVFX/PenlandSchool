@@ -322,6 +322,16 @@ nav {
     gap: 2rem;
 }
 
+.newsletter {
+    text-align: center;
+    
+}
+
+.sp-bg2 {
+    background-color: var(--secondary-color-500);
+    border-radius: 20px;
+}
+
 @media (min-width: 80rem) { 
   .container {
     grid-auto-flow: column;
