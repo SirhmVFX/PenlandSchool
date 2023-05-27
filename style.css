@@ -283,8 +283,31 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+} 
+
+.pastevents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
+.sp-bg {
+    background-color: var(--primary-color-500);
+    color: white;
+}
+.event {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.eventimage {
+    width: 200px;
+}
 
 @media (min-width: 80rem) {
     .container {
@@ -346,5 +369,9 @@ nav {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
 
+    }
+
+    .pastevents {
+        flex-direction: row;
     }
 }
