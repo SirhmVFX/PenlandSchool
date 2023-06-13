@@ -451,14 +451,21 @@ footer {
     padding: 6rem;
   }
 
+  nav {
+    display: flex;
+  }
+
   .navmenu {
     display: flex;
     gap: 3rem;
     color: #000000;
+
+    height: 100px;
     top: 0px;
     bottom: 0px;
     left: 0px;
-    z-index: 0;
+    z-index: 99;
+    opacity: 1;
     border-radius: 1px solid red;
   }
 
