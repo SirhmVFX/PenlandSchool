@@ -114,6 +114,7 @@ nav {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -137,7 +138,7 @@ nav {
 
 .navmenu li {
   list-style: none;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .hamburger {
@@ -453,23 +454,24 @@ footer {
 
   nav {
     display: flex;
+    
   }
 
   .navmenu {
     display: flex;
     gap: 3rem;
     color: #000000;
+    top: 0;
+    left: 600px;
+    width: 50%;
+    
 
-    height: 100px;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 99;
     opacity: 1;
-    border-radius: 1px solid red;
+    background-color: transparent;
   }
 
   .navmenu li:hover {
+    
       border-bottom: 3px solid var(--secondary-color-500);
   }
 
