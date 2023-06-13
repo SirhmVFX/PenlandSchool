@@ -161,7 +161,10 @@ nav {
     transition: .4s;
 }
 
-.hamburger.is-active div:nth-child(3) {}
+
+.mgtp {
+  margin-block: 1rem;
+}
 
 
 
